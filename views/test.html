@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HEY</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+		
+		$.ajax({
+			url: 'http://www.google.com',
+			method: 'GET',
+			success: function(response) {
+				console.log("YA", response);
+			},
+			error: function(err) {
+				console.error(err)
+			}
+		});
+
+	});
+
+</script>
+</body>
